@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* Definição de variáveis de cores */
+:root {
+  --color-primary: #50514F; /* Cor principal (Header, Footer, fundo geral) */
+  --color-scroll-bg: #50514F; /* Cor de fundo do scroll */
+  --color-scroll-thumb: #6e6e6e; /* Cor do polegar do scroll */
+  --color-scroll-hover: #2D3748; /* Cor do polegar ao passar o mouse */
+  --color-text: #FFFFFF; /* Cor do texto geral */
+  --color-hover: #B4ADEA; /* Cor de hover para links e botões */
+  --color-main-bg: #ffffff; /* 🎨 Cor de fundo do `main` */
+  --color-main-text: #2D3748; /* Cor do texto dentro do `main` */
+  --color-heading: #1A202C; /* Cor dos títulos */
+}
+
+/* Ajustes globais */
+html,
+body {
+  background: var(--color-main-bg);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header fixo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: var(--color-primary);
+  z-index: 50;
+}
+
+/* Ajuste da altura do Main e Section para ocupar o espaço correto */
+main, section {
+  background-color: rgba(0, 0, 0, 0.07);
+  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-primary);
+}
+
+/* Main agora tem fundo claro e ocupa o espaço correto */
+main {
+  color: var(--color-main-text); /* Texto escuro para melhor contraste */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scroll-thumb) var(--color-scroll-bg);
+  z-index: 50;
+}
+
+/* ==== Scrollbar Estilizado para o MAIN ==== */
+main::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--color-scroll-bg);
+}
+
+main::-webkit-scrollbar-track {
+  background-color: var(--color-scroll-bg);
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: var(--color-scroll-thumb);
+  border-radius: 10px;
+  border: 2px solid var(--color-scroll-bg);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* Quando passar o mouse sobre a barra de rolagem */
+main::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-scroll-hover);
+  border-color: var(--color-scroll-thumb);
+}
+
+/* Reset de estilos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

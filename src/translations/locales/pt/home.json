@@ -1,0 +1,16 @@
+{
+    "greeting": "Olá! 👋🏻",
+    "name": "EU SOU O MATHEUS ALVES DE SOUZA",
+    "roles": [
+      "Desenvolvedor Frontend 👨‍💻",
+      "Criador de Interfaces Modernas 🚀",
+      "Apaixonado por Tecnologia ❤️",
+      "Especialista em React ⚛️"
+    ],
+    "about_title": "Sobre este site",
+    "about_text1": "Um site interativo e responsivo desenvolvido com React, proporcionando uma experiência dinâmica e moderna para os usuários.",
+    "about_text2": "Explore mais sobre mim, confira meu portfólio, projetos, e sinta-se à vontade para entrar em contato.",
+    "source_code": "Código-fonte disponível aqui",
+    "image_alt": "Imagem de destaque"
+  }
+  

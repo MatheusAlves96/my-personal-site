@@ -1,0 +1,15 @@
+{
+    "language": "Idioma",
+    "english": "Inglês",
+    "spanish": "Espanhol",
+    "portuguese": "Português",
+    "nav": {
+      "home": "Início",
+      "about": "Sobre",
+      "resume": "Currículo",
+      "projects": "Projetos",
+      "statistics": "Estatísticas",
+      "contact": "Contato"
+    }
+  }
+  
